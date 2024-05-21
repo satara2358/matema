@@ -10,4 +10,4 @@
 		style default
 		color slate
 		CSS 
-		
+-> npx shadcn-ui@latest add button		
