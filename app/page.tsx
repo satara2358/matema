@@ -5,10 +5,7 @@ export default function Home() {
     <>
       <div className="text-green-500 font-bold">Cualquier cosa</div>
       <div>
-        <Button
-          size={"lg"}
-          variant={"destructive"}
-        >Click Aqui</Button>
+
       </div>
     </>
   );
