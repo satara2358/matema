@@ -10,4 +10,8 @@
 		style default
 		color slate
 		CSS 
--> npx shadcn-ui@latest add button		
+-> npx shadcn-ui@latest add button	
+-> npm install @clerk/nextjs
+-> desde https://clerk.com/docs/quickstarts/nextjs
+	pasos
+		

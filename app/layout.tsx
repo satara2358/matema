@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
+import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import "./globals.css";
 
 const font = Fira_Code({ subsets: ["latin"] });
@@ -15,8 +16,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={font.className}>{children}</body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+      <body className={font.className}>
+          <header>
+            <SignedOut>
+              <SignInButton />
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+          </header>
+          <main>
+            {children}
+          </main>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
