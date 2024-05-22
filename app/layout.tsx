@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Fira_Code } from "next/font/google";
+// import { Fira_Code } from "next/font/google";
+import { Nunito } from "next/font/google";
 import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import "./globals.css";
 
-const font = Fira_Code({ subsets: ["latin"] });
+const font = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,12 +21,12 @@ export default function RootLayout({
       <html lang="en">
       <body className={font.className}>
           <header>
-            <SignedOut>
+            {/* <SignedOut>
               <SignInButton />
             </SignedOut>
             <SignedIn>
               <UserButton />
-            </SignedIn>
+            </SignedIn> */}
           </header>
           <main>
             {children}
