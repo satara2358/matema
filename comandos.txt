@@ -14,4 +14,6 @@
 -> npm install @clerk/nextjs
 -> desde https://clerk.com/docs/quickstarts/nextjs
 	pasos
-		
+-> https://clerk.com/docs/deployments/clerk-environment-variables#sign-in-and-sign-up-redirects
+	se pega en .env NEXT_PUBLIC_CLERK_SIGN_IN_FORCE_REDIRECT_URL="/learn"
+	para dirigir la ruta después de iniciar sesión 

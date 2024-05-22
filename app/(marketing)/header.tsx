@@ -29,6 +29,7 @@ export const Header = ({ Component, pageProps }: AppProps) => {
           <SignedOut>
             <SignInButton
               mode="modal"
+              
             >
               {/* <Component {...pageProps}/> */}
               <Button variant={"danger"}>
