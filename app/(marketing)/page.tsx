@@ -19,7 +19,7 @@ export default function Home() {
           <h1 className="text-xl lg:text-3xl font-bold text-neutral-100 max-w-[480px] text-center">
             Descripción general
           </h1>
-            <div>
+            <div className="flex flex-col items-center gap-y-2 max-w-[330px] w-full">
               <ClerkLoading>
                 <Loader className="h-5 w-5 text-muted-foreground animate-ping"/>
               </ClerkLoading>
@@ -28,7 +28,7 @@ export default function Home() {
                   <SignUpButton
                     mode="modal"
                   >
-                    <Button size="lg" variant='primary' className="w-full pt-1 mb-1">
+                    <Button size="lg" variant='primary' className="w-full pt-1">
                       Comencemos a aprender
                     </Button>
                   </SignUpButton>
