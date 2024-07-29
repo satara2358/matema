@@ -20,3 +20,4 @@
 	para dirigir la ruta después de iniciar sesión 
 
 -> Iconos || https://www.flaticon.es/resultados/4?word=kids
+-> Para abrir la barra de navegación en mobile || npx shadcn-ui@latest add sheet

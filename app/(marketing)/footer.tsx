@@ -5,7 +5,7 @@ export const Footer = () => {
   return ( 
     <footer className="hidden lg:block h-20 w-full border-t-2 border-slate-400 p-2 bg-green-100">
       <div className="max-w-screen-lg mx-auto flex items-center justify-between h-full">
-      <Button size="lg" variant="ghost" className="w-full">
+        <Button size="lg" variant="ghost" className="w-full">
           <Image
             src="/set.png"
             alt="Conjuntos"

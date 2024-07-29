@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 // import { Fira_Code } from "next/font/google";
 import { Nunito } from "next/font/google";
 import { ClerkProvider, SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
-import "./globals.css";
+import './globals.css'
 
 const font = Nunito({ subsets: ["latin"] });
 

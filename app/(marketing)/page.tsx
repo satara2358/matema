@@ -17,7 +17,7 @@ export default function Home() {
         </div>
           <div className="flex flex-col items-center gap-y-8">
           <h1 className="text-xl lg:text-3xl font-bold text-neutral-100 max-w-[480px] text-center">
-            Descripción general
+            Modelos de Neurociencia para aprender Matemáticas
           </h1>
             <div className="flex flex-col items-center gap-y-2 max-w-[330px] w-full">
               <ClerkLoading>
