@@ -21,4 +21,4 @@
 
 -> Iconos || https://www.flaticon.es/resultados/4?word=kids
 -> Para abrir la barra de navegación en mobile || npx shadcn-ui@latest add sheet
--> modificaciones de colores segun la norma educativa para ni;os (colores que insitan a la concentracion)
+-> modificaciones de colores según la norma educativa para ni;os (colores que instan a la concentración)
