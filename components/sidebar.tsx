@@ -38,19 +38,19 @@ export const Sidebar = ({className}: Props) => {
             iconSrc='/suma.png'
           />
           <SidebarItem 
-            label='Suma' 
+            label='Resta' 
             href='/resta'
-            iconSrc='/suma.png'
+            iconSrc='/resta.png'
           />
           <SidebarItem 
-            label='Suma' 
+            label='Multiplicacion' 
             href='/mult'
-            iconSrc='/suma.png'
+            iconSrc='/multiplicacion.png'
           />
           <SidebarItem 
-            label='Suma' 
+            label='Division' 
             href='/div'
-            iconSrc='/suma.png'
+            iconSrc='/division.png'
           />
         </div>
         <div className='p-4'>

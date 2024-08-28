@@ -47,6 +47,11 @@ export default function Home() {
                     </Link>
                   </Button>
                 </SignedIn>
+                <Button size="lg" variant="primary" className="w-full" asChild>
+                    <Link href="/learn">
+                      Continuar
+                    </Link>
+                  </Button>
               </ClerkLoaded>
             </div>
           </div>
