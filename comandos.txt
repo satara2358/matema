@@ -22,3 +22,7 @@
 -> Iconos || https://www.flaticon.es/resultados/4?word=kids
 -> Para abrir la barra de navegación en mobile || npx shadcn-ui@latest add sheet
 -> modificaciones de colores según la norma educativa para ni;os (colores que instan a la concentración)
+
+-> desde || https://orm.drizzle.team/docs/get-started-postgresql || 
+	-> npm i drizzle-orm @neondatabase/serverless
+	-> npm i -D drizzle-kit
