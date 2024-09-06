@@ -1,4 +1,5 @@
 import { getCourses } from "@/db/queries";
+import { List } from "./list";
 
 const CoursesPage = async () => {
   const data = await getCourses();
@@ -7,7 +8,11 @@ const CoursesPage = async () => {
       <h1 className="text-2xl font-bold text-neutral-700">
         Cursos
       </h1>
-      {JSON.stringify(data)}
+      {/* {JSON.stringify(data)} */}
+      <List
+        courses={data}
+        activeCourseId={1}
+      />
     </div>
     );
 }
