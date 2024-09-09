@@ -33,4 +33,4 @@
 -> Para lanzar || npm run db:push
 -> npm i -D pg
 -> https://local.drizzle.studio/ || npm run db:studio
--> 
+-> para empujar la base de datos || npm run db:push || el archivo desde bd/schema.ts
