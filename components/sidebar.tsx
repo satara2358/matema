@@ -18,7 +18,7 @@ export const Sidebar = ({className}: Props) => {
       'flex h-full lg:w-[256px] lg:fixed left-0 top-0 px-4 border-r-2 flex-col',
       className,
     )}>
-      <Link href='/learn'>
+      <Link href='/'>
       <div className="pt-8 pl-4 pb-7 flex items-center gap-x-3">
           <Image
             src="/poseRobot.png"

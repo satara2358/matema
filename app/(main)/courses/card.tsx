@@ -11,7 +11,14 @@ type Props = {
   active?: boolean
 }
 
-export const Card = ({ title, id, imageSrc, onClick, disabled, active }: Props) => {
+export const Card = ({ 
+  title, 
+  id, 
+  imageSrc, 
+  onClick, 
+  disabled, 
+  active 
+}: Props) => {
   return (
     <div 
       onClick={() => onClick(id)}
