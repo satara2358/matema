@@ -36,3 +36,5 @@
 -> para empujar la base de datos || npm run db:push || el archivo desde bd/schema.ts
 -> npx shadcn@latest add sonner
  || para agregar sonidos a la aplicación
+-> para ejecutar la semilla en la base de datos (limpia datos anteriores) || npm i -D tsx
+-> npm run db:seed || para generar la base de datos
