@@ -20,7 +20,7 @@ export const Header = () => {
           </h1>
         </div>
         <ClerkLoading>
-          <Loader className="h-12 w-12 text-muted-foreground animate-spin"/>
+          <Loader className="h-8 w-8 text-muted-foreground animate-spin"/>
         </ClerkLoading>
         <ClerkLoaded>
           <SignedIn>

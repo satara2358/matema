@@ -23,18 +23,38 @@
 -> Para abrir la barra de navegación en mobile || npx shadcn-ui@latest add sheet
 -> modificaciones de colores según la norma educativa para ni;os (colores que instan a la concentración)
 
+Database 
+-> desde https://console.neon.tech/app/projects || create new project || nombre de la aplicación || nombre de la base de datos ||  
+-> copy Connection String postgresql://neuro_owner:2WGgJysaSbD1@ep-bitter-tooth-a5qc9vre.us-east-2.aws.neon.tech/neuro?sslmode=require || pegar en .env || DATABASE_URL
+-> verificar si se crearon las tablas ||  https://console.neon.tech/app/projects/odd-shadow-06975209/branches/br-rapid-salad-a5v64uj3/tables?database=neuro
+-> 
+
+usar ORM
 -> desde || https://orm.drizzle.team/docs/get-started-postgresql || 
 	-> npm i drizzle-orm @neondatabase/serverless
+	-> npm i drizzle-orm @neondatabase/serverless
 	-> npm i -D drizzle-kit
+	-> editar package.json || scripts{
+		"db:studio": "npx drizzle-kit studio",
+    "db:push": "npx drizzle-kit push:pg",
+    "db:seed": "tsx scripts/seed.ts"
+	}
+	-> crear folder db || drizzle.ts 
+	-> dentro de db || schema.ts => para crear las tablas con los cursos 
 
 -> Documentación schema || https://orm.drizzle.team/docs/rqb
+-> crear drizzle.config.ts 
 -> npm i dotenv
 
--> Para lanzar || npm run db:push
--> npm i -D pg
--> https://local.drizzle.studio/ || npm run db:studio
+-> Para lanzar || npm run db:push || en cmd ver Changes applied || se aplica el modelo de schema.ts 
+-> npm i -D pg || para usar pg y que funcione db:studio 
+-> https://local.drizzle.studio/ 
+	|| npm run db:studio
+	|| npm i drizzle-kit@latest -D
+
 -> para empujar la base de datos || npm run db:push || el archivo desde bd/schema.ts
 -> npx shadcn@latest add sonner
  || para agregar sonidos a la aplicación
 -> para ejecutar la semilla en la base de datos (limpia datos anteriores) || npm i -D tsx
--> npm run db:seed || para generar la base de datos
+-> npm run db:seed || para generar la base de datos empujar los cambios de bd con los cursos de la app
+
