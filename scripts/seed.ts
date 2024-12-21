@@ -12,12 +12,14 @@ const main = async () => {
     console.log("Sembrando la base de datos");
     await db.delete(schema.courses);
     await db.delete(schema.userProgress);
+    // los await delete para limpiar datos anteriores
 
+    // los await insert para insertar los cursos en la base de datos
     await db.insert(schema.courses).values([
       {
         id: 1,
         title: "Sumas",
-        imageSrc: "/suma.png",
+        imageSrc: "/suma.png", 
       },
       {
         id: 2,

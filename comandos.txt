@@ -55,6 +55,13 @@ usar ORM
 -> para empujar la base de datos || npm run db:push || el archivo desde bd/schema.ts
 -> npx shadcn@latest add sonner
  || para agregar sonidos a la aplicación
--> para ejecutar la semilla en la base de datos (limpia datos anteriores) || npm i -D tsx
--> npm run db:seed || para generar la base de datos empujar los cambios de bd con los cursos de la app
+-> para ejecutar la semilla en la base de datos (limpia datos anteriores) 
+	|| npm i -D tsx
+-> modificar el package.json || scripts{
+	"db:seed": "tsx scripts/seed.ts"
+
+-> npm run db:seed 
+	|| para generar la base de datos empujar los cambios de bd con los cursos de la app
+-> para corregir errores de bd de debe eliminar BD desde Neon y volver a empujar los comandos || npm run db:push || npm run db:seed
+-> 
 
